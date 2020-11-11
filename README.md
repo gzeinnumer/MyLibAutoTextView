@@ -4,7 +4,7 @@
 </h1>
 
 <h1 align="center">
-  MyLibAutoTextView - Easy CheckBox Dynamic
+  MyLibAutoTextView - Easy AutoTextView
 </h1>
 
 <div align="center">
@@ -42,7 +42,7 @@ dependencies {
 
 ---
 
-## DynamicCheckBox
+## AutoTextView
 
 - Widget on `xml`
 ```xml
@@ -88,14 +88,14 @@ listString.add("Dua");
 listString.add("Tiga");
 listString.add("Empat");
 
-AdapterAutoCompleteText<String> adapter = new AdapterAutoCompleteText<String>(getApplicationContext(), listObject);
+AdapterAutoCompleteText<String> adapter = new AdapterAutoCompleteText<String>(getApplicationContext(), listString);
 //adapter.setItemStyle(R.style.AutoCompleteTextViewStyle);
 act.setAdapter(adapter);
 
 act.setOnItemClickListener(new AdapterView.OnItemClickListener() {
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        act.setText(listObject.get(position).toString(), false);
+        act.setText(listString.get(position).toString(), false);
     }
 });
 ```
@@ -133,7 +133,7 @@ listObject.add(new ExampleModel(2, "Zein2", "Balbar2"));
 listObject.add(new ExampleModel(3, "Zein3", "Balbar3"));
 listObject.add(new ExampleModel(4, "Zein4", "Balbar4"));
 
-AdapterAutoCompleteText<String> adapter = new AdapterAutoCompleteText<String>(getApplicationContext(), listObject);
+AdapterAutoCompleteText<ExampleModel> adapter = new AdapterAutoCompleteText<ExampleModel>(getApplicationContext(), listObject);
 //adapter.setItemStyle(R.style.AutoCompleteTextViewStyle);
 act.setAdapter(adapter);
 
