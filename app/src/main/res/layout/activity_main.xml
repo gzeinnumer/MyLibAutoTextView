@@ -20,6 +20,8 @@
             android:layout_height="wrap_content"
             android:editable="false"
             android:inputType="none" />
+        <!--            style="@style/AutoCompleteTextViewStyle"-->
+
     </com.google.android.material.textfield.TextInputLayout>
 
 </LinearLayout>
