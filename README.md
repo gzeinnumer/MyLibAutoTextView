@@ -123,7 +123,7 @@ public class ExampleModel {
     }
 }
 ```
-Use your own model. And dont forget to declare your `model pojo` in `onCallBack`. Example `DynamicCheckBox.OnCheckedChangeListener<ExampleModel>`
+Use your own model. And dont forget to declare your `model pojo` in `Declaration`. Example `AdapterAutoCompleteText<ExampleModel>(getApplicationContext(), listObject);`
 ```java
 AutoCompleteTextView act = findViewById(R.id.act);
 

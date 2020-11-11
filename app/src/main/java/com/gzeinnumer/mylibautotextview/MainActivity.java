@@ -11,7 +11,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-//    ArrayList<AdapterAutoCompleteText.ModelClass> list = new ArrayList<>();
     AutoCompleteTextView act;
 
     @Override
