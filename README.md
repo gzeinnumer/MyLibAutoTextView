@@ -109,7 +109,7 @@ act.setOnItemClickListener(new AdapterView.OnItemClickListener() {
     }
 });
 ```
-#
+
 **Type 2** for this type you should override function `toString()` in your `model pojo`
 ```java
 public class ExampleModel {
